@@ -1,0 +1,257 @@
+:root {
+  --verde-escuro: #1b4d3e;       
+  --verde-claro: #a8e6cf;        
+  --verde-pastel: #A8D5BA;       
+  --texto-claro: #ffffff;
+  --fundo-claro: #f5f5f5;
+  --fundo-amarelado: #fff8e1;
+  --fundo-bloco: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--fundo-claro);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+  background-color: var(--verde-escuro);
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.logo-header img {
+  height: 150px;
+  width: auto;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem; 
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--texto-claro);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--verde-claro);
+}
+
+.header-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.header-icons img {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.header-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* BLOCO PADRÃO COM TEXTO  */
+.info-block {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 3rem auto;
+  padding: 0 2rem;
+}
+
+.info-block h2 {
+  text-align: center;
+  color: var(--verde-escuro); 
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.info-block-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.info-text {
+  flex: 1;
+  max-width: 500px;
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.info-image {
+  flex: 1;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-image img,
+.info-image iframe {
+  width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* BOTÕES */
+button {
+  background-color: var(--verde-escuro);
+  color: var(--texto-claro);
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #144034;
+}
+
+
+#atividades .info-image {
+  display: none;
+}
+
+#atividades .info-block-content {
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+#atividades .info-text {
+  max-width: 700px;
+  font-size: 1.4rem; 
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Texto  */
+.info-text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+  color: #444;
+}
+
+/* Mapa à direita */
+.info-image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-image iframe {
+  width: 100%;
+  height: 100%;
+  max-height: 450px;
+  border: 0;
+  border-radius: 8px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .info-block-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .info-image iframe {
+    height: 300px;
+  }
+}
+
+/*  RESPONSIVO */
+@media (max-width: 768px) {
+  .info-block-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-text {
+    text-align: left;
+  }
+
+  .info-image {
+    max-width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0;
+  }
+}
+
+/*  FOOTER */
+footer {
+  background-color: var(--verde-escuro);
+  color: var(--texto-claro);
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-footer img {
+  max-height: 150px;
+  width: auto;
+  margin-bottom: 0.5rem;
+}
+
