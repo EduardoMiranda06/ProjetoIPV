@@ -79,4 +79,4 @@ Mais do que um produto final, este projeto representa o início da minha evoluç
 Este projeto faz parte do meu portfólio de aprendizado.
 Com o tempo, novos projetos demonstrarão minha evolução técnica e prática na área.
 
-Se quiser acompanhar minha evolução, fique à vontade para explorar meus outros repositórios, que o Eterno te abençoe 😊
+Se quiser acompanhar minha evolução, fique à vontade para explorar meus outros repositórios, Que o Eterno, o Deus soberano da aliança, te guie e conduza teus caminhos segundo o Seu decreto perfeito. 😊
